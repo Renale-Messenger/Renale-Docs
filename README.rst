@@ -1,9 +1,8 @@
-Template for the Read the Docs tutorial
+Template for the Renale documetation!
 =======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+This GitHub repo that generate Docs page
 
-Read the tutorial here:
+Read they here:
 
-https://docs.readthedocs.io/en/stable/tutorial/
+renale-docs.readthedocs.io

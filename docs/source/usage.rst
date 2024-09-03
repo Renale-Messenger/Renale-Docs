@@ -6,29 +6,20 @@ Usage
 Installation
 ------------
 
-To use Lumache, first install it using pip:
-
+1. Clone Renale Server repo
 .. code-block:: console
 
-   (.venv) $ pip install lumache
+   (.venv) $ git clone https://github.com/Renale-Messenger/Renale-Server.git
+   (.venv) $ cd renale-server
 
-Creating recipes
-----------------
+2. Install requirements (ensure you have python 3.9 or higher)
+.. code-block:: console
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
+   (.venv) $ pip install -r ./requirements.txt
 
-.. autofunction:: lumache.get_random_ingredients
+3. Set up mysql db and config config.py file
+4. Run command above
+.. code-block:: console
 
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
-
-.. autoexception:: lumache.InvalidKindError
-
-For example:
-
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
-
+   (.venv) $ python -m app
+-----------------
