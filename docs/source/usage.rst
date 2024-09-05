@@ -10,45 +10,46 @@ Installation
 
 .. code-block:: console
 
-   (.venv) $ git clone https://github.com/Renale-Messenger/Renale-Server.git
-   (.venv) $ cd renale-server
+   git clone https://github.com/Renale-Messenger/Renale-Server.git
+   cd renale-server
 
 2. Install requirements (ensure you have python 3.9 or higher)
 
 .. code-block:: console
 
-   (.venv) $ pip install -r ./requirements.txt
+   pip install -r ./requirements.txt
 
 3. Set up sqlite db(and config config.py file)
 
-.. code-block:: sqlite
+.. code-block:: console
 
-   sqlite> CREATE TABLE users(
-   (x1...> id INT,
-   (x1...> name TEXT,
-   (x1...> sessions TEXT,
-   (x1...> password TEXT,
-   (x1...> token TEXT
-   (x1...> );
+   CREATE TABLE users(
+     id INT,
+     name TEXT,
+     sessions TEXT,
+     password TEXT,
+     token TEXT
+   );
 
-   sqlite> CREATE TABLE messages(
-   (x1...> id INT,
-   (x1...> user TEXT,
-   (x1...> chat TEXT,
-   (x1...> text TEXT,
-   (x1...> time REAL
-   (x1...> );
+   CREATE TABLE messages(
+     id INT,
+     user TEXT,
+     chat TEXT,
+     text TEXT,
+     time REAL
+   );
 
-   sqlite> CREATE TABLE chats(
-   (x1...> is_group INT,
-   (x1...> chat_id INT,
-   (x1...> title TEXT,
-   (x1...> description TEXT,
-   (x1...> token TEXT,
-   (x1...> members TEXT,
-   (x1...> admins TEXT
-   (x1...> );
-   sqlite> .save renale.db
+   CREATE TABLE chats(
+     is_group INT,
+     chat_id INT,
+     title TEXT,
+     description TEXT,
+     token TEXT,
+     members TEXT,
+     admins TEXT
+   );
+
+   .save renale.db
 
 4. Run as module
 
