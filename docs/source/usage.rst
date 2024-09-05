@@ -28,7 +28,8 @@ Installation
      name TEXT,
      sessions TEXT,
      password TEXT,
-     token TEXT
+     token TEXT,
+     chats TEXT
    );
 
    CREATE TABLE messages(
