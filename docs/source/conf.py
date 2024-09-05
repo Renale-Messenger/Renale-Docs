@@ -29,7 +29,8 @@ templates_path = ['_templates']
 
 # -- Options for HTML output
 html_context = {
-   "default_mode": "light"
+    "default_mode": "dark",
+    "navbar_end": ["navbar-icon-links"]
 }
 
 html_theme = 'sphinx_rtd_theme'
