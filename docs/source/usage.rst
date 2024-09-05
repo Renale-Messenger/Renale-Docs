@@ -55,5 +55,5 @@ Installation
 
 .. code-block:: console
 
-   (.venv) $ python -m app
+   python -m app
 -----------------
