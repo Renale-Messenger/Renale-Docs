@@ -26,12 +26,15 @@ intersphinx_mapping = {
 intersphinx_disabled_domains = ['std']
 
 templates_path = ['_templates']
+html_static_path = ['static']
 
 # -- Options for HTML output
 html_context = {
     "default_mode": "dark",
     "navbar_end": ["navbar-icon-links"]
 }
+
+html_css_files = ["styles.css"]
 
 html_theme = 'sphinx_rtd_theme'
 
