@@ -1,8 +1,6 @@
-Template for the Renale documetation!
+Renale messenger documetation
 =======================================
 
-This GitHub repo that generate Docs page
+In progress
 
-Read they here:
-
-renale-docs.readthedocs.io
+Read docs `here <https://renale-docs.readthedocs.io>`_
